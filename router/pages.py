@@ -15,4 +15,14 @@ def get_main_page(request : Request):
     response = {
         "request" : request
     }
+    
     return templates.TemplateResponse("index.html", response)
+
+@router.get("/login")
+def get_main_page(request : Request):
+
+    response = {
+        "request" : request
+    }
+    
+    return templates.TemplateResponse("login.html", response)

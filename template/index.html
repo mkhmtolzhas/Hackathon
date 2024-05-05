@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/style/index.css">
-    <!-- 
-        
-     -->
+    <script src="./static/js/three.min.js"></script>
+    <script src="./static/js/vanta.net.min.js"></script>
+    <script src="./static/js/green_net.js"></script>
     <title>FastGov.</title>
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">FastGov.</a>
-
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="about.html" class="">About</a>
-            <a href="tours.html" class="">Our Servises</a>
+            <a href="#" class="active">Get Started</a>
+            <a href="" class="">Our Servises</a>
             <a href="#contacts" class="">Contacts</a>
         </nav>
 
@@ -24,56 +22,19 @@
 
     </header>
 
-    <section class="home">
+    <section class="home" id="intro">
         <div class="home-content">
-            <h1>Все</h1>
-            <h1>Для</h1>
+            <h1>Все Для</h1>
+            <h1>Вашего</h1>
             <h1>Удобства</h1>
 
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo non ante accumsan feugiat. Integer nec metus et lorem condimentum cursus. Nam nec convallis eros. In sit amet venenatis nisi. Cras nec ligula non magna fermentum bibendum.
+                Мы - ваш надежный партнер в быстром и удобном доступе к государственным услугам. Современная жизнь требует эффективности, и мы здесь, чтобы обеспечить вас самыми современными и простыми в использовании инструментами для получения всех необходимых вам услуг.
             </p>
             <div class="btn-box">
-                <a href="register.html" class="btn">Get Started</a>
-                <a href="#" class="btn">Learn More</a>
+                <a href="/register" class="btn">Get Started</a>
             </div>
         </div>
-    </section>
-    <section class="content">
-        <div class="content-box">
-            <h1>Lorem</h1>
-            <h1>dolor sit</h1>
-            <h1>consectetur</h1>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo non ante accumsan feugiat. Integer nec metus et lorem condimentum cursus. Nam nec convallis eros. In sit amet venenatis nisi. Cras nec ligula non magna fermentum bibendum.</p>
-            <a href="#" class="btn">Telegram</a>
-        </div>
-        
-        
-    </section>
-    <section class="lower-content1">
-        <center>
-            <h1>Lorem dolor sit consectetur</h1>
-        </center>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo non ante accumsan feugiat. Integer nec metus et lorem condimentum cursus. Nam nec convallis eros. In sit amet venenatis nisi. Cras nec ligula non magna fermentum bibendum.</p>
-    </section>
-    <section class="lower-content">
-        <div class="second-content-box">
-            <div class="first-block">
-                <img src="B:/VS CODE/Магазин/src/icons/heart.svg" alt="" class="icons-block">
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo non ante accumsan feugiat. Integer nec metus et lorem condimentum cursus. Nam nec convallis eros. In sit amet venenatis nisi. Cras nec ligula non magna fermentum bibendum.</p>
-            </div>
-            <div class="second-block">
-                <img src="B:/VS CODE/Магазин/src/icons/home.svg" alt="" class="icons-block">
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo non ante accumsan feugiat. Integer nec metus et lorem condimentum cursus. Nam nec convallis eros. In sit amet venenatis nisi. Cras nec ligula non magna fermentum bibendum.</p>
-            </div>
-            <div class="third-block">
-                <img src="B:/VS CODE/Магазин/src/icons/world.svg" alt="" class="icons-block">
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo non ante accumsan feugiat. Integer nec metus et lorem condimentum cursus. Nam nec convallis eros. In sit amet venenatis nisi. Cras nec ligula non magna fermentum bibendum.</p>
-            </div>
     </section>
     <footer class="footer" id = "contacts">
         <div class="sections">
@@ -91,7 +52,7 @@
         <div class="sections">
             <h5>FOR BUSINESS</h5>
             <li>
-                <a href="login.html">Log In</a>
+                <a href="/login">Log In</a>
             </li>
             <li>
                 <a href="">Make a Donation</a>
@@ -103,16 +64,14 @@
         <div class="sections">
             <h5>SOCIALS</h5>
             <div class="socials">
-                <a target="_blank" href="https://www.instagram.com/mkhmtlzhs/"><img src="B:/VS CODE/Магазин/src/icons/Instagram.svg" alt="Instagram"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/olzhas-makhmet-6793332a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="B:/VS CODE/Магазин/src/icons/LinkedIn.svg" alt="LinkedIn"></a>
-                <a target="_blank" href="https://t.me/mkhmtcore"><img src="B:/VS CODE/Магазин/src/icons/Telegram.svg" alt="Telegram"></a>
-                <a target="_blank" href="https://github.com/mkhmtolzhas"><img src="B:/VS CODE/Магазин/src/icons/GitHub.svg" alt="GitHub"></a>
+                <a target="_blank" href="https://www.instagram.com/mkhmtlzhs/"><img src="./static/icons/Instagram.svg" alt="Instagram"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/olzhas-makhmet-6793332a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="./static/icons/LinkedIn.svg" alt="LinkedIn"></a>
+                <a target="_blank" href="https://t.me/mkhmtcore"><img src="./static/icons/Telegram.svg" alt="Telegram"></a>
+                <a target="_blank" href="https://github.com/mkhmtolzhas"><img src="./static/icons/GitHub.svg" alt="GitHub"></a>
             </div>
         </div>
     </footer>
-
     <div id="myModal" class="modal">
-        <!-- <span class="close">&times;</span> -->
         <div class="modal-content" id="close-login">
             <div class="form-box">
                 <div class="form-value">
@@ -121,26 +80,28 @@
                         <div class="inputbox" method="post" action="http://127.0.0.1:8000/auth/jwt/login" enctype="application/json">
                             <ion-icon name="mail-outline"></ion-icon>
                             <input type="text" id="email" name="email" required>
-                            <label for="email" >Email</label>
+                            <label for="email" >ИИН</label>
                         </div>
                         <div class="inputbox">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                             <input type="password" id="password" name="password" required>
-                            <label for="password">Password</label>
+                            <label for="password">Пароль</label>
                         </div>
                         <!-- <div class="forget">
                             <label for=""><input type="checkbox">Remember Me</label>
                         </div> -->
-                        <button type="submit">Log In</button>
+                        <button type="submit" value="Submit">Войти</button>
                         <div class="register">
-                            <p>Don't have an account? <a href="register.html">Register</a></p>
+                            <p>Нету аккаунта? <a href="register.html">Создайте</a></p>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <script src="./scripts/modal.js"></script>
-    <script src="./scripts/scroll.js"></script>
+    <script src="./static/js/modal.js"></script>
+    <script src="./static/js/three.min.js"></script>
+    <script src="./static/js/vanta.net.min.js"></script>
+    <script src="./static/js/green_net.js"></script>
 </body>
 </html>
