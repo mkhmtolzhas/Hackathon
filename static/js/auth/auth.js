@@ -15,8 +15,8 @@ document.querySelector('form').addEventListener('submit', async (event) => {
         });
         if (response.ok) {
             console.log(response.blob());
+            localStorage.setItem('jwtToken', new URLSearchParams(formData).toString());
             window.location.href = '/';
-            
         } else {
             // Если ответ не успешный, обрабатываем ошибку
             console.error('Ошибка при отправке данных:', response.status);
@@ -25,27 +25,3 @@ document.querySelector('form').addEventListener('submit', async (event) => {
         console.error('Ошибка:', error);
     }
 });
-
-// function getCookie(cookieName) {
-//     // Разбиваем строку document.cookie на отдельные куки
-//     const cookies = document.cookie.split(';');
-    
-//     // Итерируемся по каждой куки
-//     for (let i = 0; i < cookies.length; i++) {
-//         const cookie = cookies[i].trim();
-        
-//         // Проверяем, начинается ли текущая куки с искомого имени
-//         if (cookie.startsWith(cookieName + '=')) {
-//             // Если да, возвращаем значение куки
-//             return cookie.substring(cookieName.length + 1);
-//         }
-//     }
-    
-//     // Если куки с таким именем не найдено, возвращаем null
-//     return null;
-// }
-
-// // Пример использования функции для получения значения куки с именем "myCookie"
-// const myCookieValue = getCookie(document.cookie);
-// console.log(myCookieValue); // Выводим значение куки в консоль
-// console.log(document.cookie)

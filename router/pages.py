@@ -26,3 +26,13 @@ def get_main_page(request : Request):
     }
     
     return templates.TemplateResponse("login.html", response)
+
+@router.get("/register")
+def get_main_page(request : Request):
+
+    response = {
+        "request" : request
+    }
+    
+    return templates.TemplateResponse("register.html", response)
+

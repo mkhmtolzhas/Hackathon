@@ -79,8 +79,8 @@
                         <h2>Login</h2>
                         <div class="inputbox" method="post" action="http://127.0.0.1:8000/auth/jwt/login" enctype="application/json">
                             <ion-icon name="mail-outline"></ion-icon>
-                            <input type="text" id="email" name="email" required>
-                            <label for="email" >ИИН</label>
+                            <input type="text" id="username" name="username" required>
+                            <label for="username" >ИИН</label>
                         </div>
                         <div class="inputbox">
                             <ion-icon name="lock-closed-outline"></ion-icon>
@@ -92,7 +92,7 @@
                         </div> -->
                         <button type="submit" value="Submit">Войти</button>
                         <div class="register">
-                            <p>Нету аккаунта? <a href="register.html">Создайте</a></p>
+                            <p>Нету аккаунта? <a href="/register">Создайте</a></p>
                         </div>
                     </form>
                 </div>
@@ -103,5 +103,6 @@
     <script src="./static/js/three.min.js"></script>
     <script src="./static/js/vanta.net.min.js"></script>
     <script src="./static/js/green_net.js"></script>
+    <script src="./static/js/auth/auth.js"></script>
 </body>
 </html>
